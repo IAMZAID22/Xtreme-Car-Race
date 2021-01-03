@@ -116,6 +116,12 @@ function draw(){
   if(c1.x <=10 || c1.x>=800){
     c1.x = 400;
   }
+  if(c2.x <=10 || c2.x>=800){
+    c2.x = 400;
+  }
+  if(c3.x <=10 || c3.x>=800){
+    c3.x = 400;
+  }
 drawSprites();
 }
 
