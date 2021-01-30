@@ -1,9 +1,9 @@
 var c1,c2,c3,c1I,c2I,c3I,t,b1,b2,t1 = "Go!",GP = 0,s1;
 function preload(){
   t = loadImage("track.png");
-  c1I = loadImage("zcar.png");
-  c2I = loadImage("arcar.png");
-  c3I = loadImage("abcar.png");
+  c1I = loadImage("car1.png");
+  c2I = loadImage("car2.png");
+  c3I = loadImage("car3.png");
  
 }
 function setup(){
@@ -12,15 +12,15 @@ function setup(){
   
   c1 = createSprite(150,2900);
   c1.addImage(c1I);
-  c1.scale = 0.1;
+  c1.scale = 0.2;
   
   c2 = createSprite(400,2900);
   c2.addImage(c2I);
-  c2.scale = 0.1;
+  c2.scale = 0.2;
   
   c3 = createSprite(650,2900);
   c3.addImage(c3I);
-  c3.scale = 0.1;
+  c3.scale = 0.2;
   
   b1 = createSprite(40,1500,10,2900);
   b2 = createSprite(760,1500,10,2900);
@@ -115,12 +115,6 @@ function draw(){
   }
   if(c1.x <=10 || c1.x>=800){
     c1.x = 400;
-  }
-  if(c2.x <=10 || c2.x>=800){
-    c2.x = 400;
-  }
-  if(c3.x <=10 || c3.x>=800){
-    c3.x = 400;
   }
 drawSprites();
 }
